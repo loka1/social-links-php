@@ -5,7 +5,7 @@ PHP library for validating, sanitizing, and detecting social media profile URLs.
 ## Installation
 
 ```bash
-composer require social-links/php
+composer require loka1/social-links
 ```
 
 ## Usage
