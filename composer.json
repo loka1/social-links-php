@@ -1,0 +1,21 @@
+{
+    "name": "gkucmierz/social-links",
+    "description": "Social links validator and sanitizer",
+    "type": "library",
+    "require": {
+        "php": ">=8.1"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^10.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "SocialLinks\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "SocialLinks\\Tests\\": "tests/"
+        }
+    }
+}
