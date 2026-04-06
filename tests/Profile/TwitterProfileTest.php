@@ -20,7 +20,7 @@ final class TwitterProfileTest extends TestCase
     public function testTwitter(): void
     {
         $profile = 'twitter';
-        $profileId = 'gkucmierz';
+        $profileId = 'loka1';
         $desktop = "https://x.com/{$profileId}";
         $mobile = "https://x.com/{$profileId}";
 
@@ -43,7 +43,7 @@ final class TwitterProfileTest extends TestCase
 
     public function testTwitterComSanitizesToXCom(): void
     {
-        $this->assertSame('https://x.com/gkucmierz', $this->sl->sanitize('twitter', 'https://twitter.com/gkucmierz'));
-        $this->assertSame('https://x.com/gkucmierz', $this->sl->sanitize('twitter', 'https://www.twitter.com/gkucmierz'));
+        $this->assertSame('https://x.com/loka1', $this->sl->sanitize('twitter', 'https://twitter.com/loka1'));
+        $this->assertSame('https://x.com/loka1', $this->sl->sanitize('twitter', 'https://www.twitter.com/loka1'));
     }
 }

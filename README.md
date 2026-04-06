@@ -47,7 +47,7 @@ $sl->getLink('linkedin', 'satyanadella', Type::MOBILE);   // "https://linkedin.c
 $sl->sanitize('facebook', 'http://www.facebook.com/zuck/');          // "https://facebook.com/zuck"
 $sl->sanitize('twitter', 'https://twitter.com/elonmusk');            // "https://x.com/elonmusk"
 $sl->sanitize('instagram', 'https://www.instagram.com/instagram/');  // "https://instagram.com/instagram"
-$sl->sanitize('linkedin', 'http://de.linkedin.com/in/gkucmierz/');   // "https://linkedin.com/in/gkucmierz"
+$sl->sanitize('linkedin', 'http://de.linkedin.com/in/loka1/');   // "https://linkedin.com/in/loka1"
 ```
 
 ### Auto-detect a profile

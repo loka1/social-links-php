@@ -20,7 +20,7 @@ final class LinkedInProfileTest extends TestCase
     public function testLinkedin(): void
     {
         $profile = 'linkedin';
-        $profileId = 'gkucmierz';
+        $profileId = 'loka1';
         $desktop = "https://linkedin.com/in/{$profileId}";
         $mobile = "https://linkedin.com/mwlite/in/{$profileId}";
 

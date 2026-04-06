@@ -20,7 +20,7 @@ final class FacebookProfileTest extends TestCase
     public function testFacebook(): void
     {
         $profile = 'facebook';
-        $profileId = 'gkucmierz';
+        $profileId = 'loka1';
         $desktop = "https://facebook.com/{$profileId}";
         $mobile = "https://m.facebook.com/{$profileId}";
 
