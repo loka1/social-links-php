@@ -124,6 +124,10 @@ class SocialLinks
         $profileId = $this->getProfileId($profileName, $trimmed);
         $matches = $this->profiles[$profileName] ?? [];
         $idx = $this->findIndex($matches, $trimmed);
+        if ($type === Type::DEFAULT && $idx !== -1 && $matches[$idx]->pattern !== null) {
+            return str_replace('{PROFILE_ID}', $this->trim($profileId), $matches[$idx]->pattern);
+        }
+
         $matchedType = $type !== Type::DEFAULT ? $type : ($matches[$idx]->type ?? Type::DEFAULT);
         return $this->getLink($profileName, $profileId, $matchedType);
     }

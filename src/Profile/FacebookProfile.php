@@ -19,6 +19,12 @@ final class FacebookProfile
                 pattern: 'https://facebook.com/{PROFILE_ID}',
             ),
             new ProfileMatch(
+                match: '(https?://)?(www.)?facebook.com/p/({PROFILE_ID})/?',
+                group: 3,
+                type: Type::DESKTOP,
+                pattern: 'https://facebook.com/p/{PROFILE_ID}',
+            ),
+            new ProfileMatch(
                 match: '(https?://)?m.facebook.com/({PROFILE_ID})/?',
                 group: 2,
                 type: Type::MOBILE,
